@@ -25,8 +25,10 @@
           🏏 {{ scoreData.livescore }}
         </p>
         <p class="is-size-6 has-text-grey-dark mb-3">➡ {{ scoreData.runrate }}</p>
-        <p class="has-text-grey is-size-6">➡ {{ scoreData.update }}</p>
-      </div>
+        <p class="has-text-grey is-size-6 mt-5">🏏 {{ scoreData.batterone }} - {{ scoreData.batsmanonerun }} {{ scoreData.batsmanoneball }}</p>
+        <p class="has-text-grey is-size-6">🥎 {{ scoreData.bowlerone }} - {{ scoreData.bowleroneover }} Overs, {{ scoreData.bowleronerun }} Runs {{ scoreData.bowleronewickers }} Wickets</p>
+        <p class="has-text-grey is-size-6 mt-3 mb-3">➡ {{ scoreData.update }}</p>
+        </div>
     </div>
 
     <footer class="card-footer" v-if="scoreData && scoreData.livescore !== 'Data Not Found'">
